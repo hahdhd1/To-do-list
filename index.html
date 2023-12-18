@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>투두리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <span id="month-display"></span>
+        <button id="next-month">&gt;</button>
+    </div>
+    <div id="weekdays"></div>
+    <div id="calendar"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">할 일 추가</h2>
+            <input type="text" id="todo-input" placeholder="할 일을 입력하세요">
+            <button onclick="addTodo()">추가</button>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
